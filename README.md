@@ -19,7 +19,7 @@
 1. 資料生成 (Python)  
   - 使用 Faker 生成 50 筆模擬帳號資料（部門、職稱、權限、狀態、到職/離職日等）。  
   - 預設資料無風險，後續將透過Excel手動調整欄位，模擬真實異常案例。  
-<br>
+
 
 2. 資料調整 (Excel)  
   - 修改欄位以製造風險情境，例如：離職帳號仍啟用 (狀態 = '離職' & is_active = True)、權限授予超過職務需求等。  
@@ -53,13 +53,13 @@
 
 - 完整語法請見 data_integration.sql。  
 
-<br>   
-4. 資料清洗 (Python)  
+         
+4. 資料清洗 (Python)    
   - 權限欄位展開（多權限 → 單列）。    
-  - 預先建立衍生欄位（例：df['offboard_but_active'] = ( df['terminate_date'].notna() & (df['is_active'] == True))  
-  - 匯出清洗後資料集供 Power BI 使用。  
+  - 預先建立衍生欄位（例：df['offboard_but_active'] = ( df['terminate_date'].notna() & (df['is_active'] == True))    
+  - 匯出清洗後資料集供 Power BI 使用。   
 
-<br>    
+        
 5. 視覺化分析 (Power BI)    
   - 建立互動式報表，呈現四大風險情境：  
       - 權限授予不適當：超出職務需求的權限配置  
