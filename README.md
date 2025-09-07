@@ -31,9 +31,11 @@
   
                  
 3. **資料整合 (SQL)**  
-   - 匯入 MySQL，建立三張表，並設定外鍵關聯：   
-   -- 整合三張表，SQL合併語法如下     
-      
+   - 匯入 MySQL，建立三張表，並設定外鍵關聯：
+   - 整合三張表，SQL合併語法如下
+   - 完整語法請見 data_integration.sql     
+
+         
   ```sql  
   create table ALL as  
   select   
@@ -52,8 +54,8 @@
   from erp帳號清單 a  
   join erp權限清單 p on a.user_account = p.user_account  
   join 人事清單 h on a.user_id = h.user_id;  
-  ```  
-  - 完整語法請見 data_integration.sql。    
+  ```
+     
   
         
             
