@@ -53,8 +53,9 @@
   join erp權限清單 p on a.user_account = p.user_account  
   join 人事清單 h on a.user_id = h.user_id;  
   ```  
-   - 完整語法請見 data_integration.sql。    
-      
+  - 完整語法請見 data_integration.sql。    
+  
+        
             
 4. **資料清洗 (Python)**        
    - 權限欄位展開（多權限 → 單列）。    
