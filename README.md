@@ -51,12 +51,14 @@
   ```  
 
 - 完整語法請見 data_integration.sql。  
-  
+
+   
 4. 資料清洗 (Python)  
   - 權限欄位展開（多權限 → 單列）。  
   - 預先建立衍生欄位（例：df['offboard_but_active'] = ( df['terminate_date'].notna() & (df['is_active'] == True))  
   - 匯出清洗後資料集供 Power BI 使用。  
-  
+
+    
 5. 視覺化分析 (Power BI)  
   - 建立互動式報表，呈現四大風險情境：  
       - 權限授予不適當：超出職務需求的權限配置  
